@@ -1,0 +1,747 @@
+@charset "UTF-8";
+@import "../style/fonts.css";
+/* Remove initial values*/
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  color: inherit;
+  border: none;
+}
+
+p {
+  margin: 0;
+}
+
+/* Remove initial values*/
+/*Universal class*/
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1446px;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex_column {
+  flex-direction: column;
+}
+.d-flex_center {
+  align-items: center;
+  justify-content: center;
+}
+.d-flex_just-right {
+  justify-content: right;
+}
+.d-flex_just-left {
+  justify-content: left;
+}
+.d-flex_just-end {
+  justify-content: end;
+}
+
+.row {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.sky-button {
+  background: linear-gradient(90deg, #48C6EF 0%, #407BFF 100%);
+  box-shadow: 4px 4px 20px rgba(10, 53, 148, 0.25);
+  border-radius: 50px;
+  width: 300px;
+  height: 70px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  /* identical to box height, or 108% */
+  color: #FFFFFF;
+}
+
+.logo {
+  text-align: center;
+  z-index: 1;
+}
+.logo__title {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.our-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 26px;
+  color: #182227;
+  text-align: center;
+}
+
+/*Universal class*/
+/*Header components*/
+.header {
+  position: absolute;
+  top: 40px;
+  height: 64px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.header__container {
+  max-width: 1426px;
+}
+.header__values_text {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+}
+.header__link {
+  color: #000000;
+  margin-right: 97px;
+  text-align: center;
+}
+.header__link:hover {
+  position: relative;
+}
+.header__link:hover:before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #3A70E8;
+  bottom: -8px;
+  left: -2px;
+  right: 0;
+  width: 115%;
+  margin: 0 auto;
+}
+.header__eng {
+  color: #B4B1B1;
+  margin-left: 16px;
+}
+.header__nav {
+  margin-left: 326px;
+}
+
+/*Header components*/
+/*Hero components*/
+.hero {
+  height: 100vh;
+  padding: 246px 0 73px;
+  background: linear-gradient(90deg, #FEFBFB 0%, #E3EEFF 99%, #E3EEFF 100%);
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.hero .container {
+  max-width: 1416px;
+}
+.hero__application {
+  width: 480px;
+}
+.hero__main-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 9px;
+}
+.hero__sub-title {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.hero__title {
+  width: 428px;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  color: #455A64;
+  margin-bottom: 66px;
+}
+.hero__form {
+  padding-top: 100px;
+}
+.hero__input {
+  width: 480px;
+  height: 70px;
+  background: #FFFFFF;
+  border: 1px solid #EFEEEE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 19px 0 19px 15px;
+  font-size: 22px;
+  line-height: 32px;
+}
+.hero__input::placeholder {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+  color: #849198;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 10px;
+}
+.hero__input_margin {
+  margin: 25px 0 48px;
+}
+.hero__background-second {
+  right: 57px;
+  bottom: 0;
+}
+.hero__background-first {
+  left: -32px;
+  top: 0;
+}
+.hero__vector {
+  width: 52.53px;
+  height: 30.16px;
+  top: 155px;
+  left: 210px;
+}
+
+/*Hero components*/
+/*Section "О нас" components*/
+.about {
+  padding: 64px 0 63px;
+  position: relative;
+}
+.about :before {
+  content: "";
+  position: absolute;
+  background: #FFFFFF;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.about__background-img {
+  bottom: -4px;
+  left: 42px;
+}
+.about__title {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 69px;
+  color: #4C57A9;
+  margin-bottom: 60px;
+}
+.about__description {
+  width: 769px;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  color: #000000;
+}
+
+/*Section "О нас" components*/
+/*Under section "О нас" components*/
+.quote {
+  padding: 89px 0;
+  background: #F8F9FF;
+}
+.quote__sub-title {
+  position: relative;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  color: #03336E;
+  width: 1139px;
+}
+.quote__sub-title:before {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #BBC7DB;
+  height: 120px;
+  left: -36px;
+}
+
+/*Under section "О нас" components*/
+/*Section "Наша миссия" components*/
+.mission {
+  background: #fff;
+  padding: 74px 0 70px;
+  position: relative;
+}
+.mission__title {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 69px;
+  color: #4C57A9;
+  margin-bottom: 36px;
+}
+.mission__description {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  color: #263238;
+  width: 692px;
+}
+.mission__background-img {
+  bottom: 0;
+  right: 125px;
+}
+
+/*Section "Наша миссия" components*/
+/*Section Property*/
+.property {
+  padding: 157px 0 135px;
+  background: #F8F9FF;
+  border-bottom: 2px solid rgba(227, 228, 228, 0.5);
+}
+.property__text-main {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #455A64;
+}
+.property__text-sub {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #455A64;
+  width: 542px;
+}
+.property__openness {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 93px;
+}
+.property__openness-title {
+  margin-bottom: 17px;
+}
+.property__openness:before {
+  content: "02";
+  position: absolute;
+  z-index: -1;
+  left: 387px;
+  top: -86px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 164px;
+  line-height: 155.69%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.property__honesty {
+  position: relative;
+  z-index: 1;
+}
+.property__honesty-title {
+  margin-bottom: 12px;
+}
+.property__honesty:before {
+  content: "01";
+  position: absolute;
+  z-index: -1;
+  left: -2px;
+  bottom: -15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 164px;
+  line-height: 155.69%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.property__perfection {
+  position: relative;
+  z-index: 1;
+}
+.property__perfection-title {
+  margin-bottom: 13px;
+}
+.property__perfection:before {
+  content: "03";
+  position: absolute;
+  z-index: -1;
+  left: -67px;
+  bottom: -4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 164px;
+  line-height: 155.69%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+/*Section Property*/
+/*Make width "description" bigger*/
+.property .property__perfection-description {
+  width: 573px;
+}
+
+/*Make width "container" bigger*/
+.property .container {
+  max-width: 1436px;
+}
+
+/*Give padding-left*/
+.property .row {
+  padding-left: 18px;
+}
+
+/*Section "Наши услуги" components*/
+.services {
+  background: #F8F9FF;
+  padding: 98px 0 120px;
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid rgba(227, 228, 228, 0.5);
+}
+.services__background-img {
+  transform: translate(-50%, -50%);
+  top: 53%;
+  left: 49%;
+  z-index: -1;
+}
+.services__title {
+  margin-bottom: 48px;
+}
+.services__automation {
+  width: 567px;
+}
+.services__top-description {
+  width: 100%;
+}
+.services__organization-title {
+  margin: 22px 0 20px;
+}
+.services__automation-title {
+  margin: 21px 0 25px;
+}
+.services__personal-title {
+  margin: 4px 0 16px;
+}
+.services__audit-title {
+  margin: 4px 0 20px;
+}
+.services__organization-description {
+  width: 549px;
+}
+.services__automation-description {
+  width: 567px;
+}
+.services__personal-description {
+  width: 558px;
+}
+.services__audit-description {
+  width: 534px;
+}
+.services__lines {
+  z-index: -1;
+}
+.services__lines-organization {
+  top: 459px;
+  left: 618px;
+  z-index: -2;
+}
+.services__lines-personal {
+  left: 511px;
+  top: 544px;
+  z-index: -2;
+}
+.services__lines-audit {
+  top: 719px;
+  right: 601px;
+  z-index: -2;
+}
+.services__lines-automation {
+  right: 493px;
+  top: 634px;
+  z-index: -2;
+}
+.services__main-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 26px;
+  color: #6E83B7;
+}
+.services__sub-description {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #202C32;
+}
+.services__bot {
+  padding-top: 236px;
+}
+
+/*Section "Наши услуги" components*/
+/*Section "Наши клиенты" components*/
+.clients {
+  padding: 85px 0 132px;
+  background: #F8F9FF;
+}
+.clients__list {
+  padding-top: 105px;
+}
+.clients__card {
+  border: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  object-fit: initial;
+  scroll-snap-type: x mandatory;
+  cursor: grabbing;
+}
+.clients__card-img {
+  background: #FFFFFF;
+  box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  min-width: 317px;
+  min-height: 317px;
+  text-align: center;
+  vertical-align: middle;
+  scroll-snap-align: start;
+}
+.clients__card-img:not(:last-child) {
+  margin-right: 71px;
+}
+
+/*Section "Наши клиенты" components*/
+/*Section "Вакансии" components*/
+.jobs {
+  position: relative;
+  padding: 84px 0 126px;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 100%);
+}
+.jobs:before {
+  content: "";
+  position: absolute;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.jobs__selector {
+  padding-top: 149px;
+}
+.jobs__tester {
+  padding: 0 228px 0 171px;
+  margin-bottom: 41px;
+}
+.jobs__tester:before {
+  right: 172px;
+}
+.jobs__tester:after {
+  right: 172px;
+}
+.jobs__auto-tester {
+  padding-right: 65px;
+  margin-bottom: 100px;
+}
+.jobs__auto-tester:before {
+  right: 43px;
+}
+.jobs__auto-tester:after {
+  right: 43px;
+}
+.jobs__select {
+  position: relative;
+  background: #F5FAFF;
+  width: 782px;
+  height: 87px;
+  box-shadow: 2px 4px 9px rgba(75, 75, 75, 0.25);
+  border-radius: 5px;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+.jobs__select:hover {
+  border: 2px solid #6d9aff;
+}
+.jobs__select:before {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: 2px;
+  top: 50%;
+  width: 25px;
+}
+.jobs__select:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  background: #000;
+  height: 2px;
+  transform: rotate(90deg);
+  top: 50%;
+}
+.jobs__backgroung-img {
+  right: 38px;
+  bottom: 0;
+}
+
+/*Make width "sky-button" bigger*/
+.jobs .sky-button {
+  width: 380px;
+  height: 70px;
+}
+
+/*Section "Вакансии" components*/
+/*Section "address" components*/
+.address {
+  padding: 209px 0 173px;
+  background: #F8F9FF;
+}
+.address__title {
+  position: relative;
+}
+.address__title:before {
+  content: "";
+  position: absolute;
+  border-right: 3px solid #264A99;
+  height: 149px;
+  right: -26px;
+}
+.address__coordinates {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 26px;
+  width: 296.65px;
+  color: #264A99;
+  margin-left: 21px;
+}
+.address__contacts {
+  position: relative;
+}
+.address__contacts:before {
+  content: "";
+  position: absolute;
+  border-right: 3px solid #264A99;
+  height: 149px;
+  right: -126px;
+}
+.address__text-values {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 21px;
+  color: #37474F;
+}
+.address__ru-phone {
+  margin: 28px 0 23px;
+}
+.address__link {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 21px;
+  color: #37474F;
+  margin-bottom: 32px;
+}
+.address__icon:not(:last-child) {
+  margin-right: 14px;
+}
+
+/*Footer components*/
+.footer {
+  padding: 47px 0 68px;
+  background: #8FA2AB;
+}
+.footer__nav {
+  margin-right: 66px;
+}
+.footer__text-value {
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130.69%;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  display: inline-block;
+}
+.footer__text-value:not(:last-child) {
+  margin-bottom: 22px;
+}
+.footer__link {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+.footer__link:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+/*Make width "container" bigger*/
+.footer .container {
+  max-width: 1487px;
+}
+
+/*Footer components*/
+.carousel .carousel-item {
+  height: 317px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
