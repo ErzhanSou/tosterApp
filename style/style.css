@@ -274,7 +274,7 @@ p {
 /*Header components*/
 /*Hero components*/
 .hero {
-  height: calc(100vh - 319px);
+  height: 100vh;
   padding: 246px 0 73px;
   background: linear-gradient(90deg, #FEFBFB 0%, #E3EEFF 99%, #E3EEFF 100%);
 }
