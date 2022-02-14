@@ -21,6 +21,9 @@ button {
 p{
   margin: 0;
 }
+h1, h2{
+  margin: 0;
+}
 
 /* Remove initial values*/
 
@@ -139,6 +142,9 @@ p{
   margin: 0 auto;
   width: 100%;
   max-width: 1446px;
+  &:before, &:after{
+    content: none;
+  }
 }
 .d-flex {
   display: flex;
@@ -165,6 +171,7 @@ p{
 }
 .row {
   width: 100%;
+  margin: 0;
 }
 .col-12{
   width: 100%;
@@ -891,6 +898,17 @@ p{
     text-decoration-line: underline;
     color: #407BFF;
     margin-top: 19px;
+
+    display: none;
+  }
+  &__background-img_mobile, &__auto-vacancy_mobile, &__auto-vacancy_mobile, &__tester-vacancy_mobile, &__sky-button-mobile{
+    display: none;
+  }
+  &__tester-mobile{
+    display: none;
+  }
+  &__auto-mobile{
+    display: none;
   }
 }
 .jobs__dropdown-content li{
