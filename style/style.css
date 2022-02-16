@@ -10,6 +10,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  text-underline: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
 * {
@@ -20,6 +24,7 @@ a {
 button {
   color: inherit;
   border: none;
+  overflow: inherit;
 }
 
 p {
@@ -207,6 +212,10 @@ h1, h2 {
   line-height: 26px;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.hero .sky-button {
+  z-index: 1;
 }
 
 .logo {
@@ -784,6 +793,7 @@ h1, h2 {
   display: inline-block;
   margin-bottom: 56px;
   cursor: pointer;
+  margin-right: 20px;
 }
 .jobs__dropdown-title:before {
   content: "";
@@ -793,7 +803,7 @@ h1, h2 {
   height: 25px;
   transform: rotate(90deg);
   bottom: 50%;
-  right: -50px;
+  right: -43px;
 }
 .jobs__dropdown-content {
   display: none;
@@ -823,7 +833,7 @@ h1, h2 {
   color: #000000;
 }
 .jobs__auto-vacancy {
-  top: 33%;
+  top: 50%;
 }
 .jobs__link {
   display: none;
@@ -870,6 +880,174 @@ h1, h2 {
 }
 
 /*Section "Вакансии" components*/
+.modal {
+  display: none;
+}
+.modal__window {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  max-width: 1089px;
+  max-height: 958px;
+  padding: 104px 310px 164px 334px;
+  background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
+  box-shadow: 2px 10px 30px rgba(75, 75, 75, 0.15);
+  border-radius: 15px;
+}
+.modal__shadow {
+  background: rgba(49, 57, 74, 0.4);
+  width: 100%;
+  height: 100vh;
+}
+.modal__exit {
+  position: absolute;
+  top: 62px;
+  right: 69px;
+  cursor: pointer;
+}
+.modal__exit-name, .modal__exit-number, .modal__exit-link {
+  display: none;
+  position: absolute;
+}
+.modal__exit-name {
+  top: 306px;
+  right: 287px;
+}
+.modal__exit-number {
+  top: 420px;
+  right: 287px;
+}
+.modal__exit-link {
+  right: 287px;
+  bottom: 404px;
+}
+.modal__ok-number, .modal__ok-name, .modal__ok-link {
+  position: absolute;
+  display: none;
+}
+.modal__ok-name {
+  top: 306px;
+  right: 287px;
+}
+.modal__ok-number {
+  top: 420px;
+  right: 287px;
+}
+.modal__ok-link {
+  right: 287px;
+  bottom: 404px;
+}
+.modal__title {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 90px;
+}
+.modal__link-img {
+  position: absolute;
+  right: 31%;
+  top: 55.5%;
+}
+.modal__input {
+  padding: 27px 0 27px 20px;
+  width: 502px;
+  height: 80px;
+  background: #FFFFFF;
+  border: 1px solid #EDEEEF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+.modal__input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #AFBAC0;
+}
+.modal__attach {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  width: 300px;
+  height: 60px;
+  line-height: 23px;
+  color: #777D81;
+  background: none;
+  border: 2px solid #777D81;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.modal__attach:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  left: 60px;
+  top: 17px;
+  background: #777D81;
+}
+.modal__upload {
+  margin-right: 30px;
+}
+.modal__sky-button {
+  margin-top: 90px;
+  width: 350px;
+  height: 70px;
+}
+.modal__label {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #E84949;
+  margin: 0 0 7px 20px;
+}
+.modal__label-name, .modal__label-number, .modal__label-link {
+  position: absolute;
+  display: none;
+}
+.modal__label-name {
+  top: 26%;
+  left: 29%;
+}
+.modal__label-number {
+  top: 38%;
+  left: 29%;
+}
+.modal__label-link {
+  top: 50%;
+  left: 29%;
+}
+.modal__sub {
+  display: none;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #849198;
+  left: 357px;
+  bottom: 349px;
+}
+
 /*Section "address" components*/
 .address {
   padding: 209px 0 173px;

@@ -9,6 +9,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  text-underline: none;
+  &:hover{
+    text-decoration: none;
+  }
 }
 * {
   padding: 0;
@@ -17,6 +21,7 @@ a {
 button {
   color: inherit;
   border: none;
+  overflow: inherit;
 }
 p{
   margin: 0;
@@ -200,6 +205,9 @@ h1, h2{
   line-height: 26px;
   color: #FFFFFF;
   cursor: pointer;
+}
+.hero .sky-button{
+  z-index: 1;
 }
 .logo {
   text-align: center;
@@ -827,7 +835,6 @@ h1, h2{
   &__dropdown{
     &-tester{
       margin-bottom: 110px;
-
     }
     &-title{
       position: relative;
@@ -840,6 +847,7 @@ h1, h2{
       display: inline-block;
       margin-bottom: 56px;
       cursor: pointer;
+      margin-right: 20px;
       &:before{
         content: '';
         position: absolute;
@@ -848,7 +856,7 @@ h1, h2{
         height: 25px;
         transform: rotate(90deg);
         bottom: 50%;
-        right: -50px;
+        right: -43px;
       }
     }
     &-content{
@@ -883,8 +891,8 @@ h1, h2{
       line-height: 30px;
       color: #000000;
     }
-    &-vacancy{
-      top: 33%;
+    &-vacancy {
+      top: 50%;
     }
 
   }
@@ -930,6 +938,175 @@ h1, h2{
 }
 /*Section "Вакансии" components*/
 
+.modal{
+  display: none;
+  &__window{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    max-width: 1089px;
+    max-height: 958px;
+    padding: 104px 310px 164px 334px;
+    background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
+    box-shadow: 2px 10px 30px rgba(75, 75, 75, 0.15);
+    border-radius: 15px;
+  }
+  &__shadow{
+    background: rgba(49, 57, 74, 0.4);
+    width: 100%;
+    height: 100vh;
+  }
+  &__exit{
+    position: absolute;
+    top: 62px;
+    right: 69px;
+    cursor: pointer;
+    &-name, &-number, &-link{
+      display: none;
+      position: absolute;
+    }
+    &-name{
+      top: 306px;
+      right: 287px;
+    }
+    &-number{
+      top: 420px;
+      right: 287px;
+    }
+    &-link{
+      right: 287px;
+      bottom: 404px;
+    }
+  }
+  &__ok{
+    &-number, &-name, &-link{
+      position: absolute;
+      display: none;
+    }
+    &-name{
+      top: 306px;
+      right: 287px;
+    }
+    &-number{
+      top: 420px;
+      right: 287px;
+    }
+    &-link{
+      right: 287px;
+      bottom: 404px;
+    }
+  }
+  &__title{
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 90px;
+  }
+  &__link-img{
+    position: absolute;
+    right: 31%;
+    top: 55.5%;
+  }
+  &__input{
+    padding: 27px 0 27px 20px;
+    width: 502px;
+    height: 80px;
+    background: #FFFFFF;
+    border: 1px solid #EDEEEF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 35px;
+    &::placeholder{
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 26px;
+      color: #AFBAC0;
+    }
+  }
+  &__attach{
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    line-height: 23px;
+    color: #777D81;
+    background: none;
+    border: 2px solid #777D81;
+    box-sizing: border-box;
+    border-radius: 5px;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      left: 60px;
+      top: 17px;
+      background: #777D81;
+    }
+  }
+  &__upload{
+    margin-right: 30px;
+  }
+  &__sky-button{
+    margin-top: 90px;
+    width: 350px;
+    height: 70px;
+  }
+  &__label{
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #E84949;
+    margin: 0 0 7px 20px;
+    &-name, &-number, &-link{
+      position: absolute;
+      display: none;
+    }
+    &-name{
+      top: 26%;
+      left: 29%;
+    }
+    &-number{
+      top: 38%;
+      left: 29%;
+    }
+    &-link{
+      top: 50%;
+      left: 29%;
+     }
+  }
+  &__sub{
+    display: none;
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #849198;
+    left: 357px;
+    bottom: 349px;
+  }
+}
 /*Section "address" components*/
 .address{
   padding: 209px 0 173px;

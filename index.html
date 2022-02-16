@@ -93,9 +93,9 @@
 <path d="M12.266 32.2827C12.4222 32.4389 12.6755 32.4389 12.8317 32.2827L15.3773 29.7371C15.5335 29.5809 15.5335 29.3276 15.3773 29.1714C15.221 29.0152 14.9678 29.0152 14.8116 29.1714L12.5488 31.4342L10.2861 29.1714C10.1299 29.0152 9.87661 29.0152 9.7204 29.1714C9.56419 29.3276 9.56419 29.5809 9.7204 29.7371L12.266 32.2827ZM12.1488 25.5059V31.9999H12.9488V25.5059H12.1488Z" fill="#407BFF"/>
 </svg></span>
                     <label for="name"></label>
-                    <input type="text" id="name" class="hero__input" placeholder="Ваше имя">
+                    <input autocomplete="off" type="text" id="name" class="hero__input" placeholder="Ваше имя">
                     <label for="number"></label>
-                    <input type="text" id="number" class="hero__input hero__input_margin" placeholder="Ваш номер">
+                    <input autocomplete="off" type="text" id="number" class="hero__input hero__input_margin" placeholder="Ваш номер">
                 </form>
                 <button class="sky-button">Оставить заявку</button>
             </div>
@@ -487,6 +487,51 @@
             </div>
         </div>
     </div>
+</div>
+<div class="modal">
+    <div class="modal__window">
+        <div class="modal__exit">
+            <img src="./images/elements/exit.png" alt="exit">
+        </div>
+        <div class="modal__exit-name">
+            <img src="./images/elements/labelExit.svg" alt="exit">
+        </div>
+        <div class="modal__exit-number">
+            <img src="./images/elements/labelExit.svg" alt="exit">
+        </div>
+        <div class="modal__exit-link">
+            <img src="./images/elements/labelExit.svg" alt="exit">
+        </div>
+        <div class="modal__ok-name">
+            <img src="./images/elements/ok.svg" alt="ok">
+        </div>
+        <div class="modal__ok-number">
+            <img src="./images/elements/ok.svg" alt="ok">
+        </div>
+        <div class="modal__ok-link">
+            <img src="./images/elements/ok.svg" alt="ok">
+        </div>
+        <h2 class="modal__title">Заполните поля для отправки запроса</h2>
+        <form class="modal___form">
+            <div class="modal__link-img">
+                <img src="./images/elements/link%201.svg" alt="link">
+            </div>
+            <label class="modal__label modal__label-name"  for="modal_name">Ваше ФИО  *</label>
+            <input id="modal_name" class="modal__input" autocomplete="off" type="text" placeholder="Ваше ФИО">
+            <label class="modal__label modal__label-number" for="modal_number">Ваш номер  *</label>
+            <input id="modal_number" class="modal__input" autocomplete="off" type="text" placeholder="Ваш номер">
+            <label class="modal__label modal__label-link" for="modal_link">Ссылка на резюме  *</label>
+            <input id="modal_link" class="modal__input" autocomplete="off" type="text" placeholder="Ссылка на резюме ">
+            <button class="modal__attach"><span class="modal__upload">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 18.75C0 18.4185 0.15051 18.1005 0.418419 17.8661C0.686328 17.6317 1.04969 17.5 1.42857 17.5H18.5714C18.9503 17.5 19.3137 17.6317 19.5816 17.8661C19.8495 18.1005 20 18.4185 20 18.75C20 19.0815 19.8495 19.3995 19.5816 19.6339C19.3137 19.8683 18.9503 20 18.5714 20H1.42857C1.04969 20 0.686328 19.8683 0.418419 19.6339C0.15051 19.3995 0 19.0815 0 18.75ZM4.70429 5.88356C4.43647 5.64915 4.28602 5.33126 4.28602 4.9998C4.28602 4.66834 4.43647 4.35045 4.70429 4.11604L8.99 0.365988C9.2579 0.131646 9.62119 0 10 0C10.3788 0 10.7421 0.131646 11.01 0.365988L15.2957 4.11604C15.5559 4.35179 15.6999 4.66755 15.6967 4.9953C15.6934 5.32305 15.5432 5.63657 15.2783 5.86833C15.0134 6.1001 14.6551 6.23156 14.2806 6.23441C13.906 6.23726 13.5451 6.11126 13.2757 5.88356L11.4286 4.26729V13.7499C11.4286 14.0814 11.2781 14.3994 11.0102 14.6338C10.7422 14.8682 10.3789 14.9999 10 14.9999C9.62112 14.9999 9.25776 14.8682 8.98985 14.6338C8.72194 14.3994 8.57143 14.0814 8.57143 13.7499V4.26729L6.72429 5.88356C6.45639 6.1179 6.09309 6.24955 5.71429 6.24955C5.33548 6.24955 4.97218 6.1179 4.70429 5.88356Z" fill="#777D81"/>
+</svg>
+</span>Прикрепить резюме </button>
+            <p class="modal__sub">Убедитесь, что ваше резюме доступно другим  😉</p>
+        </form>
+        <button class="sky-button modal__sky-button">Отправить</button>
+     </div>
+    <div class="modal__shadow"></div>
 </div>
 
 <div class="address">
