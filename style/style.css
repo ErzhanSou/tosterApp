@@ -26,6 +26,10 @@ p {
   margin: 0;
 }
 
+h1, h2 {
+  margin: 0;
+}
+
 /* Remove initial values*/
 /* Boostrap slider */
 .slick-slide {
@@ -142,6 +146,9 @@ p {
   width: 100%;
   max-width: 1446px;
 }
+.container:before, .container:after {
+  content: none;
+}
 
 .d-flex {
   display: flex;
@@ -165,6 +172,7 @@ p {
 
 .row {
   width: 100%;
+  margin: 0;
 }
 
 .col-12 {
@@ -827,6 +835,16 @@ p {
   text-decoration-line: underline;
   color: #407BFF;
   margin-top: 19px;
+  display: none;
+}
+.jobs__background-img_mobile, .jobs__auto-vacancy_mobile, .jobs__auto-vacancy_mobile, .jobs__tester-vacancy_mobile, .jobs__sky-button-mobile {
+  display: none;
+}
+.jobs__tester-mobile {
+  display: none;
+}
+.jobs__auto-mobile {
+  display: none;
 }
 
 .jobs__dropdown-content li {

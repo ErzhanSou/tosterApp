@@ -57,9 +57,23 @@
     .address__text-values{
         font-size: 23px;
     }
+    .jobs__tester-mobile {
+        display: none;
+    }
+    .jobs__auto-vacancy {
+        top: 28%;
+    }
+    .jobs__auto-mobile {
+        display: none;
+    }
+    .jobs__dropdown-title{
+        font-size: 24px;
+    }
+    .jobs__tester-vacancy {
+        top: 28%;
+    }
 }
-
-@media (max-width: 1420px) {
+@media (max-width: 1440px) {
     .container{
         max-width: 1246px;
     }
@@ -81,8 +95,14 @@
         width: 531px;
     }
     .hero {
-        height: calc(100vh - 248px);
-        padding: 175px 0 73px;
+        height: 100vh;
+        padding: 134px 0 73px;
+    }
+    .hero__form {
+        padding-top: 75px;
+    }
+    .hero__vector {
+        top: 135px;
     }
     .hero .container {
         max-width: 1316px;
@@ -131,6 +151,9 @@
     .property .row{
         padding-left: 0;
     }
+    .services__background-img img {
+        width: 504px;
+    }
     .property .container {
         max-width: 1336px;
     }
@@ -166,6 +189,9 @@
         min-width: 182px;
         min-height: 163px;
     }
+    .clients__inner img {
+        width: 80%;
+    }
     .clients__card-img{
         min-width: 289px;
         min-height: 289px;
@@ -175,6 +201,9 @@
     }
     .jobs{
         padding: 70px 0 99px;
+    }
+    .jobs__dropdown-title:before{
+        right: -39px;
     }
     .jobs__background-img img{
         width: 766px;
@@ -188,7 +217,7 @@
     }
     .jobs__dropdown-content{
         padding: 42px 25px 56px 36px;
-        max-width: 592px;
+        max-width: 656px;
     }
     .jobs__dropdown-title{
         font-size: 20px;
@@ -210,6 +239,16 @@
     .jobs .sky-button {
         width: 363px;
     }
+    .jobs__tester-mobile {
+        display: none;
+    }
+
+    .jobs__auto-mobile {
+        display: none;
+    }
+    .address__office{
+        font-size: 20px;
+    }
     .address__title:before{
         right: 27px;
     }
@@ -221,7 +260,6 @@
     }
 
 }
-
 @media (max-width: 1320px) {
     .header__nav {
         margin-left: 299px;
@@ -247,7 +285,7 @@
         font-size: 20px;
     }
     .hero {
-        height: calc(100vh - 204px);
+        height: 100vh;
         padding: 131px 0 73px;
     }
     .hero .sky-button{
@@ -375,7 +413,7 @@
     }
     .jobs__dropdown-content {
         padding: 42px 25px 56px 36px;
-        max-width: 544px;
+        max-width: 645px;
     }
     .jobs__dropdown-content li {
         margin-left: 14px;
@@ -400,6 +438,13 @@
         font-size: 19px;
         line-height: 26px;
     }
+    .jobs__tester-mobile {
+        display: none;
+    }
+
+    .jobs__auto-mobile {
+        display: none;
+    }
     .address__coordinates{
         font-size: 30px;
     }
@@ -416,16 +461,277 @@
         font-size: 20px;
     }
 }
+@media (max-width: 1111px) {
+    .container{
+        max-width: 1046px;
+    }
+    .header{
+        top: 18px;
+    }
+    .header__nav {
+        margin-left: 138px;
+    }
+    .header__values_text {
+        font-size: 19px;
+    }
+    .hero__main-title {
+        font-size: 30px;
+    }
+    .hero__sub-title {
+        font-size: 20px;
+    }
+    .hero {
+        height: 100vh;
+        padding: 101px 0 73px;
+    }
+    .hero__background-second img {
+        width: 605px;
+        right: 0;
+    }
+    .hero__background-first img {
+        width: 377px;
+    }
+    .logo svg{
+        width: 32px;
+        height: 32px;
+    }
+    .hero__input_margin {
+        margin: 15px 0 29px;
+    }
+    .hero .sky-button {
+        width: 268px;
+        font-size: 20px;
+        height: 57px;
+    }
+    .logo__title{
+        font-size: 16px;
+    }
+    .hero__form {
+        padding-top: 70px;
+    }
+    .hero__vector {
+        top: 127px;
+        left: 106px;
+    }
+    .hero .hero__vector svg{
+        width: 53px;
+        height: 47px;
+    }
+    .hero__title{
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+    .hero__input {
+        font-size: 18px;
+        width: 388px;
+        height: 56px;
+    }
+    .hero__input{
+        font-size: 18px;
+    }
+    .about__description {
+        width: 541px;
+        font-size: 17px;
+        line-height: 34px;
+    }
+    .about__title {
+        font-size: 37px;
+        margin-bottom: 10px;
+    }
+    .about__background-img img {
+        width: 550px;
+    }
+    .quote__sub-title{
+        width: 866px;
+        line-height: 30px;
+    }
+    .quote__sub-title:before{
+        height: 98px;
+    }
+    .mission__background-img {
+        right: 2px;
+    }
+    .mission__background-img img {
+        width: 560px;
+    }
+    .mission__title{
+        font-size: 37px;
+        margin-bottom: 10px;
+    }
+    .mission__description{
+        width: 541px;
+        font-size: 17px;
+        line-height: 34px;
+    }
+    .property {
+        padding: 122px 0 73px;
+    }
+    .property__text-main {
+        font-size: 41px;
+    }
+    .property__text-sub{
+        width: 438px;
+    }
+    .property .property__perfection-description {
+        width: 470px;
+    }
+    .property__openness:before {
+        left: 315px;
+    }
+    .property__honesty:before {
+        left: 7px;
+    }
+    .property__perfection:before {
+        left: 5px;
+        bottom: 5px;
+    }
+    .our-title {
+        font-size: 40px;
+    }
+    .services__main-title {
+        font-size: 22px;
+    }
+    .services .services__top img{
+        height: 55px;
+        width: 55px;
+    }
+    .services .services__bot img{
+        height: 55px;
+        width: 55px;
+    }
+    .services__sub-description{
+        line-height: 23px;
+    }
+    .services__automation {
+        width: 428px;
+    }
+    .services__automation-description {
+        width: 442px;
+    }
+    .services__organization-description {
+        width: 484px;
+    }
+    .services__personal-description {
+        width: 446px;
+    }
+    .services__audit-description {
+        width: 444px;
+    }
+    .services__background-img img {
+        width: 483px;
+    }
+    .services__lines-organization {
+        top: 433px;
+        left: 283px;
+    }
+    .services__lines-personal {
+        left: 231px;
+        top: 501px;
+    }
+    .services__lines-audit {
+        right: 286px;
+        top: 632px;
+    }
+    .services__lines-automation {
+        right: 180px;
+        top: 562px;
+    }
+    .clients__slider {
+        padding-top: 61px;
+    }
+    .clients__slide{
+        height: 223px;
+    }
+    .our-title {
+        font-size: 35px;
+    }
+    .jobs__select {
+        width: 482px;
+        font-size: 17px;
+        height: 63px;
+    }
+    .jobs__selector {
+        padding-top: 53px;
+    }
+    .jobs__background-img img {
+        width: 607px;
+    }
+    .jobs .sky-button {
+        width: 279px;
+        font-size: 19px;
+    }
+    .jobs__auto-tester {
+        margin: 37px 0 48px;
+    }
+    .jobs__dropdown-title {
+        font-size: 17px;
+    }
+    .jobs__auto-text-value {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .jobs__dropdown-content {
+        padding: 23px 18px 39px 31px;
+        max-width: 496px;
+    }
+    .jobs__dropdown-title:before{
+        width: 16px;
+        height: 12px;
+        right: -22px;
+    }
+    .jobs__dropdown-tester {
+        margin-bottom: 45px;
+    }
+    .jobs__tester_text-value{
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .jobs__tester-mobile {
+        display: none;
+    }
 
-@media (max-width: 990px) {
+    .jobs__auto-mobile {
+        display: none;
+    }
+    .address__coordinates {
+        font-size: 26px;
+    }
+    .address__text-values {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .address__title:before {
+        right: 46px;
+    }
+    .address__contacts:before {
+        right: -3px;
+    }
+    .footer .container {
+        max-width: 977px;
+    }
+    .footer__link {
+        font-size: 18px;
+    }
+    .footer__text-value {
+        font-size: 17px;
+    }
+}
+@media (max-width: 971px) {
     .container{
         max-width: 846px;
+    }
+    .header .logo svg{
+        width: 28px;
+        height: 28px;
+    }
+    .logo__title {
+        font-size: 15px;
     }
     .header__nav {
         margin-left: 49px;
     }
     .header__values_text {
-        font-size: 19px;
+        font-size: 17px;
     }
     .header__link{
         margin-right: 49px;
@@ -441,47 +747,57 @@
         z-index: 1;
     }
     .hero {
-        height: calc(100vh - 153px);
-        padding: 133px 0 20px;
+        height: 100vh;
+        padding: 115px 0 20px;
     }
     .hero .container {
         max-width: 950px;
     }
     .hero__background-first img {
-        width: 412px;
+        width: 287px;
     }
     .hero__input {
         font-size: 18px;
-        width: 388px;
+        width: 367px;
+        height: 47px;
+    }
+    .hero__input::placeholder{
+        font-size: 18px;
+    }
+    .hero__vector {
+        top: 123px;
+        left: 163px;
     }
     .hero__title{
+        width: 394px;
         font-size: 22px;
     }
     .hero__title::placeholder{
         font-size: 22px;
     }
-    .hero__vector {
-        top: 168px;
-        left: 90px;
-    }
     .hero .sky-button {
-        width: 259px;
+        width: 243px;
         font-size: 20px;
         z-index: 1;
+        height: 47px;
     }
     .hero__background-second img {
-        width: 555px;
+        width: 474px;
     }
     .about__background-img img {
-        width: 507px;
+        width: 471px;
     }
     .about__title {
-        font-size: 34px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
     .about__description {
         width: 470px;
         font-size: 15px;
+        line-height: 29px;
+    }
+    .quote {
+        padding: 42px 0;
     }
     .quote__sub-title {
         font-size: 16px;
@@ -491,18 +807,19 @@
         height: 102px;
     }
     .mission__title {
-        font-size: 34px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
     .mission__background-img img {
         width: 466px;
     }
     .mission {
-        padding: 32px 0 74px;
+        padding: 32px 0 29px;
     }
     .mission__description {
+        line-height: 29px;
         width: 447px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .property{
         padding: 87px 0 94px;
@@ -514,13 +831,14 @@
         margin-bottom: 46px;
     }
     .property__text-main {
-        font-size: 38px;
+        font-size: 35px;
     }
     .property .property__perfection-description {
-        width: 386px;
+        width: 345px;
     }
-    .property__text-sub{
-        width: 388px;
+    .property__text-sub {
+        width: 364px;
+        line-height: 23px;
     }
     .property__openness:before {
         left: 268px;
@@ -529,8 +847,8 @@
     }
     .property__perfection:before {
         font-size: 115px;
-        left: -45px;
-        bottom: 45px;
+        left: -26px;
+        bottom: 28px;
     }
     .property__honesty:before {
         left: -3px;
@@ -538,8 +856,8 @@
         font-size: 115px;
     }
     .our-title {
-        font-size: 37px;
-        margin-bottom: 20px;
+        font-size: 35px;
+        margin-bottom: 29px;
     }
     .services{
         padding: 57px 0 50px;
@@ -551,6 +869,18 @@
     }
     .services__lines{
         display: none;
+    }
+    .services__organization-description {
+        width: 550px;
+    }
+    .services__automation-description {
+        width: 601px;
+    }
+    .services__personal-description {
+        width: 655px;
+    }
+    .services__audit-description {
+        width: 574px;
     }
     .services__top-part{
         display: flex;
@@ -594,7 +924,7 @@
     }
     .services__second-img {
         display: block;
-        top: 57%;
+        top: 59%;
         left: -5%;
     }
     .clients__list {
@@ -612,40 +942,65 @@
         padding: 61px 0 38px;
     }
     .jobs__tester-vacancy {
-        top: 27%;
-        left: 10%;
+        top: 34%;
+        left: 3%;
     }
     .jobs__auto-vacancy {
-        top: 27%;
-        left: 10%;
+        top: 34%;
+        left: 3%;
     }
     .jobs__dropdown-content {
-        max-width: 790px;
+        max-width: 511px;
     }
     .jobs__select {
-        width: 480px;
-        font-size: 17px;
-        height: 66px;
+        width: 440px;
+        font-size: 15px;
+        height: 55px;
     }
     .jobs__selector {
         padding-top: 54px;
     }
     .jobs__background-img img {
-        width: 530px;
+        width: 508px;
     }
     .jobs__auto-tester {
         margin: 41px 0 43px;
     }
     .jobs .sky-button {
-        width: 299px;
-        font-size: 20px;
+        width: 277px;
+        font-size: 18px;
+        height: 49px;
     }
-    .address__coordinates{
-        width: 240px;
+    .jobs__tester-mobile {
+        display: none;
+    }
+
+    .jobs__auto-mobile {
+        display: none;
     }
     .address {
         padding: 99px 0 109px;
         background: #F8F9FF;
+    }
+    .address__coordinates {
+        width: 193px;
+        font-size: 23px;
+    }
+    .address .address_logo svg{
+        width: 50px;
+        height: 50px;
+    }
+    .address .address__social svg{
+        width: 38px;
+        height: 38px;
+    }
+
+    .address__text-values {
+        font-size: 21px;
+        line-height: 20px;
+    }
+    .address__ru-phone {
+        margin: 18px 0 13px;
     }
     .address__toster-inst, .address__tele-whats, .address__face-link{
         display: flex;
@@ -654,14 +1009,15 @@
     .address__toster-inst svg, .address__tele-whats svg, .address__face-link svg:not(:last-child) {
         margin-bottom: 10px;
     }
-    .address__link{
-        font-size: 22px;
+    .address__link {
+        font-size: 21px;
+        margin-bottom: 16px;
     }
     .address__contacts:before {
-        right: -19px;
+        right: -22px;
     }
     .address__title:before {
-        right: 48px;
+        right: 36px;
     }
     .footer .container {
         max-width: 922px;
@@ -673,7 +1029,13 @@
         font-size: 19px;
     }
 }
-
+@media (max-width: 920px) {
+    .about__description {
+        width: 456px;
+        font-size: 15px;
+        line-height: 29px;
+    }
+}
 /*Ipad Air*/
 @media (max-width: 820px) {
     .container{
@@ -691,7 +1053,7 @@
         height: 30px;
     }
     .hero {
-        height: calc(100vh - 149px);
+        height:100vh;
         padding: 109px 0 40px;
     }
     .hero .container {
@@ -837,12 +1199,13 @@
         bottom: 64px;
     }
     .services__background-img {
-        top: 30%;
-        left: 100%;
+        top: 32%;
+        opacity: 0.6;
     }
     .services__second-img {
-        top: 58%;
-        left: -3%;
+        top: 60%;
+        left: -6%;
+        opacity: 0.6;
     }
     .clients__card-img {
         min-width: 190px;
@@ -877,19 +1240,29 @@
         padding: 23px 0 209px;
     }
     .jobs__dropdown-content {
-        max-width: 651px;
+        max-width: 633px;
     }
     .jobs__tester-vacancy {
         top: 15%;
-        left: 7%;
+        left: 12%;
     }
     .jobs__auto-vacancy {
         top: 15%;
-        left: 7%;
+        left: 12%;
+    }
+    .jobs__tester-mobile {
+        display: none;
+    }
+
+    .jobs__auto-mobile {
+        display: none;
     }
     .address{
         position: relative;
         padding: 66px 0 517px;
+    }
+    .address__coordinates{
+        text-align: center;
     }
     .address__contacts{
         display: none;
@@ -972,27 +1345,263 @@
         max-width: 722px;
     }
 }
-
 /*Ipad Mini*/
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+    .container {
+        max-width: 692px;
+    }
     .hero .container {
         max-width: 747px;
     }
     .hero__form {
         padding-top: 351px;
     }
-    .container {
-        max-width: 692px;
+    .hero__background-second{
+        top: 50%;
+        left: 45%;
+    }
+    .hero__input_margin {
+        margin: 15px 0 64px;
     }
     .hero__vector {
         top: 403px;
         left: 203px;
     }
+    .about__background-img{
+        top: 106%;
+    }
+    .about__description{
+        width: 86%;
+    }
+    .mission__description{
+        width: 90%;
+    }
     .jobs__dropdown-content {
         max-width: 610px;
     }
+    .jobs__tester-mobile {
+        display: none;
+    }
+    .jobs__auto-mobile {
+        display: none;
+    }
+    .services__organization-description {
+        width: 441px;
+    }
+    .services__automation-description {
+        width: 430px;
+    }
+    .services__personal-description {
+        width: 502px;
+    }
+    .services__audit-description {
+        width: 465px;
+    }
+    .services__background-img {
+        top: 30%;
+    }
+    .services__second-img {
+        top: 60%;
+        opacity: 0.6;
+    }
+    .address {
+        position: relative;
+        padding: 40px 0 486px;
+    }
 }
-
+@media (max-width: 480px) {
+    .container{
+        max-width: 420px;
+    }
+    .header {
+        top: 15px;
+    }
+    .hero {
+        padding: 85px 0 34px;
+    }
+    .hero__main-title {
+        font-size: 18px;
+        line-height: 44px;
+    }
+    .hero__sub-title {
+        font-size: 13px;
+    }
+    .hero__background-first{
+        display: none;
+    }
+    .hero__background-second img {
+        width: 287px;
+    }
+    .hero__background-second {
+        top: 50%;
+    }
+    .hero__title {
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+    }
+    .hero__vector{
+        display: none;
+    }
+    .hero__vector_blue{
+        display: block;
+        right: -19px;
+        bottom: 159px;
+        transform: rotate(28deg);
+    }
+    .hero__form {
+        padding-top: 168px;
+    }
+    .hero__input {
+        font-size: 18px;
+        width: 360px;
+    }
+    .hero__input_margin {
+        margin: 15px 0 28px;
+    }
+    .hero .sky-button {
+        width: 214px;
+        font-size: 18px;
+    }
+    .hero__input::placeholder{
+        font-size: 15px;
+    }
+    .about {
+        padding: 8px 0 36px;
+    }
+    .about__title {
+        font-size: 25px;
+        margin-bottom: -3px;
+    }
+    .about__description{
+        font-size: 17px;
+        width: 100%;
+        line-height: 23px;
+    }
+    .about__background-img img {
+        width: 401px;
+    }
+    .about__background-img {
+        top: 116%;
+    }
+    .mission .col-6 {
+        width: 100%;
+    }
+    .property {
+        padding: 30px 0 27px;
+    }
+    .property__text-main {
+        font-size: 29px;
+    }
+    .property__text-sub {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .property__openness-second{
+        margin: 21px 0;
+    }
+    .property__honesty:before {
+        left: 11px;
+        bottom: 29px;
+        font-size: 100px;
+    }
+    .property__openness-second:before{
+        left: 10px;
+        bottom: 29px;
+        font-size: 100px;
+    }
+    .property__perfection:before {
+        font-size: 100px;
+        left: 8px;
+        bottom: 37px;
+    }
+    .our-title {
+        font-size: 26px;
+        margin-bottom: 26px;
+    }
+    .services__background-img img {
+        width: 348px;
+    }
+    .services__background-img {
+        top: 29%;
+        left: 103%;
+    }
+    .services__second-img {
+        top: 58%;
+        left: -9%;
+    }
+    .services__organization-description {
+        width: 430px;
+    }
+    .services__personal-description {
+        width: 430px;
+    }
+    .services__audit-description {
+        width: 430px;
+    }
+    .clients__inner img {
+        width: 70%;
+    }
+    .jobs {
+        padding: 38px 0 209px;
+    }
+    .jobs__tester{
+        display: none;
+    }
+    .jobs__auto-tester{
+        display: none;
+    }
+    #tester-mobile {
+        display: block;
+        width: 400px;
+        font-size: 13px;
+    }
+    #auto-mobile{
+        display: block;
+        width: 400px;
+        font-size: 13px;
+    }
+    .jobs__tester-title_mobile{
+        width: 100%;
+    }
+    .jobs__plus {
+        font-size: 20px;
+    }
+    .jobs__background-img{
+        display: none;
+    }
+    .jobs .jobs__background-img_mobile{
+        display: block;
+        right: 13%;
+    }
+    .jobs__dropdown-content {
+        padding: 23px 18px 39px 44px;
+    }
+    .jobs__tester-vacancy_mobile{
+        position: initial;
+    }
+    .jobs__auto-vacancy_mobile{
+        margin-top: 30px;
+        position: initial;
+    }
+    .jobs__dropdown-title:before {
+        height: 23px;
+        right: 10px;
+    }
+    .jobs__sky-button{
+        display: none;
+    }
+    .jobs__sky-button-mobile{
+        display: block;
+    }
+    .address {
+        position: relative;
+        padding: 40px 0 320px;
+    }
+    .address__text-values {
+        font-size: 19px;
+    }
+}
 /*Iphone 11 pro max*/
 @media (max-width: 428px) {
     .container{
@@ -1003,7 +1612,7 @@
         height: 28px;
     }
     .hero {
-        height: calc(100vh - 149px);
+        height: 100vh;
         padding: 109px 0 40px;
     }
     .hero__background-first {
@@ -1013,7 +1622,7 @@
         max-width: 349px;
     }
     .hero__main-title{
-        font-size: 15px;
+        font-size: 14px;
         line-height: 29px;
         font-weight: 500;
         padding: 0;
@@ -1021,14 +1630,14 @@
         margin: 0;
     }
     .hero__sub-title{
-        font-size: 11px;
+        font-size: 10px;
         line-height: 20px;
         text-align: center;
         font-style: normal;
         font-weight: normal;
     }
     .hero__form {
-        padding-top: 181px;
+        padding-top: 150px;
     }
     .hero__background-second img{
         width: 225px;
@@ -1036,7 +1645,7 @@
     }
     .hero__background-second {
         transform: translate(-50%, -50%);
-        top: 52%;
+        top: 50%;
         left: 46%;
     }
     .logo__title{
@@ -1048,6 +1657,7 @@
         height: 19px;
     }
     .hero__title{
+        text-align: start;
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
@@ -1074,8 +1684,9 @@
     }
     .hero__vector_blue{
         display: block;
-        top: 211px;
+        top: 177px;
         left: 113px;
+        transform: rotate(0deg);
     }
     .hero .sky-button{
         width: 250px;
@@ -1325,8 +1936,13 @@
         font-size: 14px;
         line-height: 18px;
     }
+    .jobs__auto-text-value {
+        font-size: 14px;
+        line-height: 18px;
+    }
     .jobs .sky-button{
         width: 250px;
+        margin-left: 15px;
         height: 50px;
     }
     .jobs__dropdown-content {
@@ -1342,19 +1958,33 @@
     .jobs__auto-vacancy{
         margin-top: 26px;
     }
-    .jobs__auto-text-value{
+    .jobs__auto-text-value-mobile {
         font-size: 14px;
         line-height: 18px;
     }
-    .jobs__background-img img {
+     .jobs__background-img img {
         width: 198px;
         height: 110px;
     }
     .jobs__background-img {
         right: 28%;
     }
+    .jobs__sky-button-mobile{
+        display: block;
+    }
+    .jobs .jobs__background-img_mobile {
+        right: 27%;
+    }
+    #tester-mobile {
+        width: 370px;
+        font-size: 14px;
+    }
+    #auto-mobile{
+        width: 370px;
+        font-size: 14px;
+    }
     .address{
-        padding: 64px 0 274px;
+        padding: 28px 0 274px;
     }
     .address svg{
         width: 48px;
@@ -1366,14 +1996,14 @@
         text-align: center;
     }
     .address__text-values{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 17px;
         text-align: center;
         color: #37474F;
     }
     .address__map{
-        max-width: 215px;
-        max-height: 74px;
+        max-width: 192px;
+        max-height: 110px;
         top: 50%;
     }
     .address__ru-phone {
@@ -1391,4 +2021,291 @@
     .footer .container {
         max-width: 322px;
     }
+}
+/*Samsung Galaxy S20 Ultra*/
+@media (max-width: 413px) {
+    .hero__background-second {
+        transform: translate(-50%, -50%);
+        top: 45%;
+        left: 46%;
+    }
+    .jobs__auto-text-value {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+/*Iphone 12 pro*/
+@media (max-width: 391px) {
+    .container{
+        max-width: 350px;
+    }
+    .hero {
+        height: 100vh;
+        padding: 100px 0 40px;
+    }
+    .hero__background-second {
+        transform: translate(-50%, -50%);
+        top: 46%;
+        left: 46%;
+    }
+    .about__description_none{
+        width: 313px;
+    }
+    .mission__description_none{
+        width: 313px;
+    }
+    #tester-mobile {
+        width: 340px;
+        font-size: 14px;
+    }
+    #auto-mobile{
+        width: 340px;
+    }
+    .jobs .jobs__background-img_mobile {
+        right: 22%;
+    }
+    .hero__vector_blue {
+        display: table;
+        bottom: 0;
+    }
+    .property .property__perfection-description {
+        width: 298px;
+    }
+    .jobs__auto-text-value {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+}
+/*Samsung Galaxy S8+*/
+@media (max-width: 360px) {
+    .container {
+        max-width: 310px;
+    }
+
+    .hero__input {
+        width: 315px;
+    }
+
+    .hero .sky-button {
+        width: 215px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .about__description_none {
+        line-height: 18px;
+        width: 300px;
+    }
+
+    .mission__description_none {
+        line-height: 18px;
+        width: 300px;
+    }
+
+    .services__background-img {
+        left: 108%;
+    }
+
+    .services__second-img {
+        left: -12%;
+    }
+
+    #tester-mobile {
+        width: 320px;
+        font-size: 13px;
+    }
+
+    #auto-mobile {
+        width: 320px;
+        font-size: 13px;
+    }
+
+    .jobs__tester:before {
+        width: 9px;
+    }
+
+    .jobs__tester:after {
+        width: 9px;
+    }
+    .jobs__auto-tester:before{
+        width: 9px;
+    }
+    .jobs__auto-tester:after{
+        width: 9px;
+    }
+    .jobs__auto-text-value {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+/*Iphone 5/SE*/
+@media (max-width: 321px) {
+    .container{
+        max-width: 280px;
+    }
+    .header svg {
+        width: 25px;
+        height: 25px;
+    }
+    .hero__main-title{
+        font-size: 13px;
+    }
+    .hero__sub-title{
+        font-size: 9px;
+    }
+    .hero__background-second {
+        top: 49%;
+        left: 42%;
+    }
+    .hero__input {
+        width: 257px;
+    }
+    .hero__form {
+        padding-top: 140px;
+    }
+    .about__title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .about__description_none{
+        font-size: 10px;
+        line-height: 16px;
+        width: 257px;
+    }
+    .about__background-img {
+        top: 111%;
+    }
+    .mission__title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .mission__description_none {
+        font-size: 10px;
+        line-height: 16px;
+        width: 273px;
+    }
+    .property__text-main {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .property__honesty:before {
+        left: 16px;
+        bottom: 6px;
+        font-size: 77px;
+    }
+    .property__openness-second:before {
+        left: 21px;
+        bottom: 16px;
+        font-size: 77px;
+    }
+    .property__perfection:before {
+        left: 29px;
+        bottom: 14px;
+        font-size: 77px;
+    }
+    .property__text-sub {
+        font-size: 11px;
+        line-height: 14px;
+        width: 264px;
+    }
+    .property .property__perfection-description {
+        width: 264px;
+    }
+    .our-title {
+        font-size: 21px;
+        line-height: 18px;
+    }
+    .services__main-title {
+        font-size: 18px;
+    }
+    .services__organization-description {
+        width: 270px;
+    }
+    .services__automation-description {
+        width: 270px;
+    }
+    .services__audit-description {
+        width: 259px;
+    }
+    .services__personal-description {
+        width: 287px;
+    }
+    .services__sub-description{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .services__background-img {
+        left: 111%;
+    }
+    .services__second-img {
+        left: -17%;
+        top: 52%;
+    }
+    .clients__slider {
+        padding-top: 21px;
+    }
+    #tester-mobile {
+        width: 276px;
+        font-size: 12px;
+    }
+    #auto-mobile {
+        width: 276px;
+        font-size: 12px;
+    }
+    .jobs__tester:before {
+        right: 19px;
+    }
+    .jobs__tester:after {
+        right: 19px;
+    }
+    .jobs__auto-tester:before {
+        right: 19px;
+    }
+    .jobs__auto-tester:after {
+        right: 19px;
+    }
+    .jobs .sky-button {
+        width: 204px;
+        margin-left: 15px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .jobs__dropdown-content {
+        max-width: 287px;
+    }
+    .jobs__dropdown-title{
+        text-align: start;
+        line-height: 26px;
+        font-size: 13px;
+    }
+    .jobs__dropdown-title:before {
+        right: 44px;
+    }
+    .jobs__tester_text-value {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .jobs__auto-text-value {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .address .address_logo svg {
+        width: 39px;
+        height: 39px;
+    }
+    .address {
+        padding: 28px 0 225px;
+    }
+    .address__coordinates {
+        font-size: 20px;
+        line-height: 19px;
+    }
+    .footer svg{
+        width: 30px;
+        height: 30px;
+    }
+
 }
