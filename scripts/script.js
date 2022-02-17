@@ -45,8 +45,8 @@ const jobsTester = document.querySelector(".jobs__tester")
 const modal = document.querySelector('.modal')
 const skyButton = document.querySelectorAll(".sky-button")
 const exitModal = document.querySelector('.modal__exit')
-const modalName = document.querySelector('#modal_name')
-const modalNumber = document.querySelector('#modal_number')
+let modalName = document.querySelector('#modal_name')
+let modalNumber = document.querySelector('#modal_number')
 const modalLink = document.querySelector('#modal_link')
 const modalExitName = document.querySelector('.modal__exit-name')
 const modalExitNumber = document.querySelector('.modal__exit-number')
@@ -62,6 +62,8 @@ const okName = document.querySelector('.modal__ok-name')
 const okNumber = document.querySelector('.modal__ok-number')
 const okLink = document.querySelector('.modal__ok-link')
 const modalSub = document.querySelector('.modal__sub')
+const heroInputName = document.querySelector('#name')
+const heroInputNumber = document.querySelector('#number')
 /*Mobile*/
 const skyButtonMobile = document.querySelector(".jobs__sky-button-mobile")
 const testerMobileBtn = document.querySelector("#tester-mobile")
@@ -123,16 +125,25 @@ autoTitleNoneMobile.onclick = () =>{
 }
 
 /*Modal window*/
+let innerNameModal = document.querySelector('#modal_name')
+let innerNumberModal = document.querySelector('#modal_number')
+const innerLinkModal = document.querySelector('#modal_link')
 
+/*Writes name and number from "Hero Input" to "Modal Input*/
+const heroWriter = (name, number) => {
+    modalName.value = name.value
+    modalNumber.value = number.value
+}
 skyButton.forEach( (el) => {
     el.onclick = () =>{
         modal.style.display = "block"
+        /*call function at click*/
+        heroWriter(heroInputName, heroInputNumber)
     }
 })
 exitModal.onclick = () => {
     modal.style.display = "none"
 }
-
 
 const check = (input, exit, label, okSvg) => {
     if (input.value === ''){
@@ -160,25 +171,21 @@ modalNumber.addEventListener('input', () =>{
 modalLink.addEventListener('input', () => {
     check(modalLink, modalExitLink, modalLabelLink, okLink)
 })
-console.log(modalName)
 
 modalSkyButton.addEventListener('click', () =>{
-    const name = document.querySelector('#modal_name')
-    const number = document.querySelector('#modal_number')
-    const link = document.querySelector('#modal_link')
-    const total = [name, number, link]
+    const total = [innerNameModal, innerNumberModal, innerLinkModal]
     const exit = [modalExitName, modalExitNumber, modalExitLink]
     const label = [modalLabelName, modalLabelNumber, modalLabelLink]
     const isOk = [okName, okNumber, okLink]
     total.forEach((el) => {
+        console.dir(el)
         exit.forEach((ex) => {
             label.forEach((labels) => {
                 isOk.forEach((ok) =>{
                     if (el.value === '') {
                         check(el, ex, labels, ok)
-                        console.log('test0')
                     } else {
-                        console.log("test1")
+                        console.log('ok')
                     }
                 })
             })
@@ -189,4 +196,3 @@ modalSkyButton.addEventListener('click', () =>{
         console.log('URA')
     }
 })
-

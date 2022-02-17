@@ -61,7 +61,7 @@
         display: none;
     }
     .jobs__auto-vacancy {
-        top: 28%;
+        top: 48%;
     }
     .jobs__auto-mobile {
         display: none;
@@ -277,8 +277,8 @@
         font-size: 21px;
         line-height: 29px;
     }
-    .jobs__auto-vacancy{
-        top: 29%;
+    .jobs__auto-vacancy {
+        top: 51%;
     }
     .jobs .sky-button {
         width: 363px;
@@ -476,7 +476,7 @@
         top: 27%;
     }
     .jobs__auto-vacancy {
-        top: 27%;
+        top: 48%;
     }
     .jobs__tester_text-value {
         font-size: 19px;
@@ -880,13 +880,14 @@
     }
     .address__coordinates {
         font-size: 26px;
+        width: 203px;
     }
     .address__text-values {
         font-size: 22px;
         line-height: 25px;
     }
     .address__title:before {
-        right: 46px;
+        right: 12px;
     }
     .address__contacts:before {
         right: -3px;
@@ -955,8 +956,8 @@
         height: 58px;
     }
     .modal__ok-link {
+        top: 310px;
         right: 224px;
-        bottom: 225px;
     }
     .modal__ok-name {
         top: 138px;
@@ -982,8 +983,8 @@
         left: 11%;
     }
     .modal__exit-link {
+        top: 310px;
         right: 224px;
-        bottom: 225px;
     }
     .modal__exit-name {
         top: 138px;
@@ -1232,7 +1233,7 @@
         left: 3%;
     }
     .jobs__auto-vacancy {
-        top: 34%;
+        top: 58%;
         left: 3%;
     }
     .jobs__dropdown-content {
@@ -1319,6 +1320,14 @@
         width: 456px;
         font-size: 15px;
         line-height: 29px;
+    }
+    .modal__ok-link {
+        top: 309px;
+        right: 223px;
+    }
+    .modal__exit-link {
+        top: 309px;
+        right: 223px;
     }
 }
 /*Ipad Air*/
