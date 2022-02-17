@@ -1335,7 +1335,6 @@
     .container{
         max-width: 746px;
     }
-
     .header__nav{
         display: none;
     }
@@ -1346,6 +1345,9 @@
     .header svg{
         width: 30px;
         height: 30px;
+    }
+    .mobile__menu{
+        display: block;
     }
     .hero {
         height:100vh;
@@ -2088,6 +2090,21 @@
          width: 15px;
          height: 15px;
      }
+    .burger__nav {
+        padding-top: 42px;
+    }
+    .burger__link {
+        margin-bottom: 36px;
+        margin-right: 0;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .burger__menu .header__values_text {
+        margin-bottom: 36px;
+        margin-right: 0;
+        font-size: 24px;
+        line-height: 24px;
+    }
 }
 /*Iphone 11 pro max*/
 @media (max-width: 428px) {
@@ -2124,7 +2141,7 @@
         font-weight: normal;
     }
     .hero__form {
-        padding-top: 150px;
+        padding-top: 194px;
     }
     .hero__background-second img{
         width: 225px;
@@ -2171,7 +2188,7 @@
     }
     .hero__vector_blue{
         display: block;
-        top: 177px;
+        top: 218px;
         left: 113px;
         transform: rotate(0deg);
     }
@@ -2899,6 +2916,18 @@
     .footer svg{
         width: 30px;
         height: 30px;
+    }
+    .burger__link {
+        margin-bottom: 36px;
+        margin-right: 0;
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .burger__menu .header__values_text {
+        margin-bottom: 36px;
+        margin-right: 0;
+        font-size: 22px;
+        line-height: 20px;
     }
 
 }

@@ -294,11 +294,117 @@ h1, h2{
     margin-left: 326px;
   }
   &__burger{
-    display: none;
+    display: block;
   }
 }
 /*Header components*/
 
+/*Mobile burger*/
+.mobile{
+  &__menu{
+    display: none;
+    transition: all 1s ease-out;
+  }
+  &__btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    & span{
+      display: block;
+      width: 23px;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -10px;
+      transition: all 1s ease-out;
+    }
+    &:after, &:before{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 17px;
+      height: 2px;
+      background: #000;
+      top: 50%;
+      left: 65%;
+      margin-left: -10px;
+    }
+    &:active{
+      transition: all 0.4s linear;
+    }
+    &:after{
+      transform: translateY(5px);
+    }
+    &:before{
+      transform: translateY(-5px);
+    }
+  }
+}
+.burger{
+  &__menu{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 5;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding: 37px 37px 111px;
+    transition: all 1s ease-out;
+    & .header__values_text{
+      margin-bottom: 70px;
+      margin-right: 0;
+      font-size: 30px;
+      line-height: 29px;
+    }
+    }
+  &__exit svg{
+    width: 25px;
+    height: 25px;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__nav{
+    padding-top: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link{
+    margin-bottom: 70px;
+    margin-right: 0;
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    position: relative;
+    font-family: "Jost", sans-serif;
+    font-weight: normal;
+    &:hover{
+      &:before{
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid #3A70E8;
+        bottom: -8px;
+        left: -2px;
+        right: 0;
+        width: 115%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.mobile__menu a{
+  transition: all 0.4s ease-out;
+}
 /*Hero components*/
 .hero {
   height: 100vh;

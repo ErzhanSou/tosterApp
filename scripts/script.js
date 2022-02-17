@@ -64,6 +64,11 @@ const okLink = document.querySelector('.modal__ok-link')
 const modalSub = document.querySelector('.modal__sub')
 const heroInputName = document.querySelector('#name')
 const heroInputNumber = document.querySelector('#number')
+/*Burger mobile*/
+const burgerBtn = document.querySelector('.mobile__btn')
+const burgerMenu = document.querySelector('.burger__menu')
+const burgerExit = document.querySelector('.burger__exit')
+const burgerLink = document.querySelectorAll('.burger__link')
 /*Mobile*/
 const skyButtonMobile = document.querySelector(".jobs__sky-button-mobile")
 const testerMobileBtn = document.querySelector("#tester-mobile")
@@ -123,6 +128,21 @@ autoTitleNoneMobile.onclick = () =>{
     jobs.style.padding = "38px 0 130px"
     skyButtonMobile.style.display = "block"
 }
+/*Burger menu*/
+burgerBtn.onclick = (e) =>{
+    e.preventDefault()
+    burgerMenu.style.transition = ' 1s ease-out 0.5s'
+    burgerMenu.style.display = 'flex'
+}
+burgerExit.onclick = () =>{
+    burgerMenu.style.display = 'none'
+
+}
+burgerLink.forEach( (el) =>{
+    el.onclick =() =>{
+        burgerMenu.style.display = 'none'
+    }
+})
 
 /*Modal window*/
 let innerNameModal = document.querySelector('#modal_name')
