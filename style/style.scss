@@ -218,7 +218,18 @@ h1, h2{
   color: #FFFFFF;
   cursor: pointer;
 }
-.hero .sky-button{
+.hero__sky-button{
+  background: linear-gradient(90deg, #48C6EF 0%, #407BFF 100%);
+  box-shadow: 4px 4px 20px rgba(10, 53, 148, 0.25);
+  border-radius: 50px;
+  width: 300px;
+  height: 70px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+  cursor: pointer;
   z-index: 1;
 }
 .logo {
@@ -487,7 +498,6 @@ h1, h2{
       margin: 25px 0 48px;
     }
   }
-
   &__background-second {
     right: 57px;
     bottom: 0;
@@ -507,6 +517,31 @@ h1, h2{
   &__vector_blue{
     display: none;
   }
+  &__exit-name{
+    display: none;
+    position: absolute;
+    top: 58%;
+    right: 5%;
+  }
+  &__exit-number{
+    display: none;
+    position: absolute;
+    top: 79%;
+    right: 5%;
+  }
+  &__ok-name{
+    display: none;
+    position: absolute;
+    top: 58%;
+    right: 5%;
+  }
+  &__ok-number{
+    display: none;
+    position: absolute;
+    top: 79%;
+    right: 5%;
+  }
+
 }
 /*Hero components*/
 
@@ -1012,7 +1047,11 @@ h1, h2{
     &-vacancy {
       top: 50%;
     }
-
+    &_flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__link{
     display: none;
@@ -1024,8 +1063,6 @@ h1, h2{
     text-decoration-line: underline;
     color: #407BFF;
     margin-top: 19px;
-
-    display: none;
   }
   &__background-img_mobile, &__auto-vacancy_mobile, &__auto-vacancy_mobile, &__tester-vacancy_mobile, &__sky-button-mobile{
     display: none;

@@ -126,12 +126,26 @@
 <path d="M3.47756 1.02942C3.47756 1.02942 12.5283 7.48003 12.5161 27.2867" stroke="#407BFF" stroke-linecap="round"/>
 <path d="M12.266 32.2827C12.4222 32.4389 12.6755 32.4389 12.8317 32.2827L15.3773 29.7371C15.5335 29.5809 15.5335 29.3276 15.3773 29.1714C15.221 29.0152 14.9678 29.0152 14.8116 29.1714L12.5488 31.4342L10.2861 29.1714C10.1299 29.0152 9.87661 29.0152 9.7204 29.1714C9.56419 29.3276 9.56419 29.5809 9.7204 29.7371L12.266 32.2827ZM12.1488 25.5059V31.9999H12.9488V25.5059H12.1488Z" fill="#407BFF"/>
 </svg></span>
-                    <label for="name"></label>
+                    <label class="hero__label-name" for="name">
+                        <span class="hero__exit-name">
+                            <img src="./images/elements/labelExit.svg" alt="exit">
+                        </span>
+                        <span class="hero__ok-name">
+                            <img src="./images/elements/ok.svg" alt="ok">
+                        </span>
+                    </label>
                     <input autocomplete="off" type="text" id="name" class="hero__input" placeholder="Ваше имя">
-                    <label for="number"></label>
+                    <label class="hero__label-number" for="number">
+                        <span class="hero__exit-number">
+                            <img src="./images/elements/labelExit.svg" alt="exit">
+                        </span>
+                        <span class="hero__ok-number">
+                            <img src="./images/elements/ok.svg" alt="ok">
+                        </span>
+                    </label>
                     <input autocomplete="off" type="text" id="number" class="hero__input hero__input_margin" placeholder="Ваш номер">
                 </form>
-                <button class="sky-button">Оставить заявку</button>
+                <button id="hero__sky-buttonID" class="hero__sky-button">Оставить заявку</button>
             </div>
         </div>
     </div>
@@ -436,36 +450,39 @@
                         <button id="auto-mobile" class="jobs__select jobs__auto-tester jobs__auto-mobile">Специалист по автоматизированному тестированию ПО<span class="jobs__plus">+</span></button>
                         <div id="auto__testerTask"
                              class="jobs__dropdown-content jobs__auto-vacancy d-flex d-flex_column d-flex_center">
-                            <h5 class="jobs__dropdown-title jobs__auto-title">Специалист по автоматизированному
-                                тестированию ПО</h5>
-                            <div class="jobs__dropdown-tester">
-                                <p class="jobs__auto-text-value jobs__auto-description">Наша команда ищет инженера по
-                                    тестированию с хорошим знанием автоматизации</p>
-                                <p class="jobs__auto-text-value jobs__auto-task">Задачи:</p>
-                                <ul class="jobs__auto-text-value">
-                                    <li>Работа в кросс-функциональной команде частично удаленной команде</li>
-                                    <li>Разработка тест-планов и тест-кейсов, написание баг-репортов</li>
-                                    <li>Автоматизация тест-кейсов</li>
-                                    <li>Поддержка кода фреймворка по автотестов</li>
-                                    <li>Построение CI/CD</li>
-                                </ul>
-                                <p class="jobs__auto-text-value jobs__auto-requirement">Требования:</p>
-                                <ul class="jobs__auto-text-value">
-                                    <li>Опыт написания автотестов для web- и мобильных приложений от 3-х лет</li>
-                                    <li>Умение работать в средах Kanban и Agile</li>
-                                    <li>Автоматизация Web UI, API, Mobile</li>
-                                    <li>Опыт создания фреймворков для автоматизированных тестов</li>
-                                </ul>
-                                <p class="jobs__auto-text-value jobs__auto-conditions">Условия:</p>
-                                <ul class="jobs__auto-text-value">
-                                    <li>Высокий уровень оплаты труда</li>
-                                    <li>Работа в команде сильных специалистов</li>
-                                    <li>Возможность обучения и сертификации</li>
-                                    <li>Лучшая техника и программное обеспечение</li>
-                                    <li>Демократичное руководство, отсутствие бюрократии</li>
-                                </ul>
+                            <div class="jobs__auto_flex">
+                                <h5 class="jobs__dropdown-title jobs__auto-title">Специалист по автоматизированному
+                                    тестированию ПО</h5>
+                                <div class="jobs__dropdown-tester">
+                                    <p class="jobs__auto-text-value jobs__auto-description">Наша команда ищет инженера по
+                                        тестированию с хорошим знанием автоматизации</p>
+                                    <p class="jobs__auto-text-value jobs__auto-task">Задачи:</p>
+                                    <ul class="jobs__auto-text-value">
+                                        <li>Работа в кросс-функциональной команде частично удаленной команде</li>
+                                        <li>Разработка тест-планов и тест-кейсов, написание баг-репортов</li>
+                                        <li>Автоматизация тест-кейсов</li>
+                                        <li>Поддержка кода фреймворка по автотестов</li>
+                                        <li>Построение CI/CD</li>
+                                    </ul>
+                                    <p class="jobs__auto-text-value jobs__auto-requirement">Требования:</p>
+                                    <ul class="jobs__auto-text-value">
+                                        <li>Опыт написания автотестов для web- и мобильных приложений от 3-х лет</li>
+                                        <li>Умение работать в средах Kanban и Agile</li>
+                                        <li>Автоматизация Web UI, API, Mobile</li>
+                                        <li>Опыт создания фреймворков для автоматизированных тестов</li>
+                                    </ul>
+                                    <p class="jobs__auto-text-value jobs__auto-conditions">Условия:</p>
+                                    <ul class="jobs__auto-text-value">
+                                        <li>Высокий уровень оплаты труда</li>
+                                        <li>Работа в команде сильных специалистов</li>
+                                        <li>Возможность обучения и сертификации</li>
+                                        <li>Лучшая техника и программное обеспечение</li>
+                                        <li>Демократичное руководство, отсутствие бюрократии</li>
+                                    </ul>
+                                </div>
+                                <button class="sky-button">Откликнуться</button>
                             </div>
-                            <button class="sky-button">Откликнуться</button>
+
                         </div>
 <!--                        Mobile version-->
                         <div id="auto__testerTask_mobile"
@@ -613,6 +630,7 @@
                     <p class="address__kg-phone address__text-values">+996 509 20 00 07</p>
                 </div>
             </div>
+            <!-- -->
             <div class="col-4 d-flex d-flex_just-right">
                 <!--social icons-->
                 <div class="address__social d-flex d-flex_column d-flex_center">
