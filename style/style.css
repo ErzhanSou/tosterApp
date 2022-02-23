@@ -228,7 +228,18 @@ h1, h2 {
   cursor: pointer;
 }
 
-.hero .sky-button {
+.hero__sky-button {
+  background: linear-gradient(90deg, #48C6EF 0%, #407BFF 100%);
+  box-shadow: 4px 4px 20px rgba(10, 53, 148, 0.25);
+  border-radius: 50px;
+  width: 300px;
+  height: 70px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+  cursor: pointer;
   z-index: 1;
 }
 
@@ -495,6 +506,30 @@ h1, h2 {
 }
 .hero__vector_blue {
   display: none;
+}
+.hero__exit-name {
+  display: none;
+  position: absolute;
+  top: 58%;
+  right: 5%;
+}
+.hero__exit-number {
+  display: none;
+  position: absolute;
+  top: 79%;
+  right: 5%;
+}
+.hero__ok-name {
+  display: none;
+  position: absolute;
+  top: 58%;
+  right: 5%;
+}
+.hero__ok-number {
+  display: none;
+  position: absolute;
+  top: 79%;
+  right: 5%;
 }
 
 /*Hero components*/
@@ -952,6 +987,11 @@ h1, h2 {
 .jobs__auto-vacancy {
   top: 50%;
 }
+.jobs__auto_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .jobs__link {
   display: none;
   font-family: "Jost", sans-serif;
@@ -962,7 +1002,6 @@ h1, h2 {
   text-decoration-line: underline;
   color: #407BFF;
   margin-top: 19px;
-  display: none;
 }
 .jobs__background-img_mobile, .jobs__auto-vacancy_mobile, .jobs__auto-vacancy_mobile, .jobs__tester-vacancy_mobile, .jobs__sky-button-mobile {
   display: none;

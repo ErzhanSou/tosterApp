@@ -41,6 +41,13 @@ const autoTesterTask = document.querySelector("#auto__testerTask")
 const autoTitleNone = document.querySelector(".jobs__auto-title")
 const jobsAutoTester = document.querySelector(".jobs__auto-tester")
 const jobsTester = document.querySelector(".jobs__tester")
+const heroExitName = document.querySelector('.hero__exit-name')
+const heroExitNumber = document.querySelector('.hero__exit-number')
+const heroOkName = document.querySelector('.hero__ok-name')
+const heroOkNumber = document.querySelector('.hero__ok-number')
+const heroInputName = document.querySelector('#name')
+const heroInputNumber = document.querySelector('#number')
+const heroSkyButton = document.querySelector('.hero__sky-button')
 /*Modal*/
 const modal = document.querySelector('.modal')
 const skyButton = document.querySelectorAll(".sky-button")
@@ -62,8 +69,6 @@ const okName = document.querySelector('.modal__ok-name')
 const okNumber = document.querySelector('.modal__ok-number')
 const okLink = document.querySelector('.modal__ok-link')
 const modalSub = document.querySelector('.modal__sub')
-const heroInputName = document.querySelector('#name')
-const heroInputNumber = document.querySelector('#number')
 /*Burger mobile*/
 const burgerBtn = document.querySelector('.mobile__btn')
 const burgerMenu = document.querySelector('.burger__menu')
@@ -103,6 +108,58 @@ autoTitleNone.onclick = () =>{
     jobsAutoTester.style.opacity = "1"
 }
 
+
+const heroCheck = (input, exit, okSvg) => {
+    if (input.value === ''){
+        exit.style.display = 'block'
+        okSvg.style.display = "none"
+    } else{
+        exit.style.display = 'none'
+        okSvg.style.display = "block"
+    }
+}
+/*Writes name and number from "Hero Input" to "Modal Input*/
+const heroWriter = (name, number) => {
+    if (name && number !== ''){
+        modalName.value = name.value
+        modalNumber.value = number.value
+        heroSkyButton.style.disabled = 'false'
+    }
+}
+
+/*on click call modal window*/
+skyButton.forEach( (el) => {
+    el.onclick = () =>{
+        modal.style.display = "block"
+    }
+})
+
+/*On click check hero inputs for empty value*/
+heroSkyButton.addEventListener('click', () =>{
+    const heroInputs = [heroInputName, heroInputNumber]
+    heroInputs.forEach((el) =>{
+        if (el.value === ''){
+            console.log('Пусто!!!')
+            heroCheck(heroInputName, heroExitName, heroOkName)
+            heroCheck(heroInputNumber, heroExitNumber, heroOkNumber)
+        } else{
+            console.log('Все заполнено!!!')
+            heroCheck(heroInputName, heroExitName, heroOkName)
+            heroCheck(heroInputNumber, heroExitNumber, heroOkNumber)
+        }
+    })
+    if (heroInputName.value === ''){
+        heroCheck(heroInputName, heroExitName, heroOkName)
+    } else if(heroInputNumber.value === '') {
+        heroCheck(heroInputNumber, heroExitNumber, heroOkNumber)
+    }
+})
+heroInputName.addEventListener('input', () =>{
+    heroCheck(heroInputName, heroExitName, heroOkName)
+})
+heroInputNumber.addEventListener('input', () =>{
+    heroCheck(heroInputNumber, heroExitNumber, heroOkNumber)
+})
 /*Mobile version*/
 testerMobileBtn.onclick = () =>{
     testerTaskMobile.style.display = "block"
@@ -125,7 +182,7 @@ autoTitleNoneMobile.onclick = () =>{
     autoTaskMobile.style.display = "none"
     autoMobileBtn.style.display = "block"
     jobsBackImgMobile.style.display = "block"
-    jobs.style.padding = "38px 0 130px"
+    jobs.style.padding = "38px 0 209px"
     skyButtonMobile.style.display = "block"
 }
 /*Burger menu*/
@@ -149,22 +206,9 @@ let innerNameModal = document.querySelector('#modal_name')
 let innerNumberModal = document.querySelector('#modal_number')
 const innerLinkModal = document.querySelector('#modal_link')
 
-/*Writes name and number from "Hero Input" to "Modal Input*/
-const heroWriter = (name, number) => {
-    modalName.value = name.value
-    modalNumber.value = number.value
-}
-skyButton.forEach( (el) => {
-    el.onclick = () =>{
-        modal.style.display = "block"
-        /*call function at click*/
-        heroWriter(heroInputName, heroInputNumber)
-    }
-})
 exitModal.onclick = () => {
     modal.style.display = "none"
 }
-
 const check = (input, exit, label, okSvg) => {
     if (input.value === ''){
         exit.style.display = 'block'
@@ -191,7 +235,6 @@ modalNumber.addEventListener('input', () =>{
 modalLink.addEventListener('input', () => {
     check(modalLink, modalExitLink, modalLabelLink, okLink)
 })
-
 modalSkyButton.addEventListener('click', () =>{
     const total = [innerNameModal, innerNumberModal, innerLinkModal]
     const exit = [modalExitName, modalExitNumber, modalExitLink]

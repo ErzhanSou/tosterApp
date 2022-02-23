@@ -17,6 +17,22 @@
     .hero__application{
         width: 611px;
     }
+    .hero__ok-name {
+        top: 62%;
+        right: 5%;
+    }
+    .hero__exit-name{
+        top: 62%;
+        right: 5%;
+    }
+    .hero__ok-number {
+        top: 82%;
+        right: 5%;
+    }
+    .hero__exit-number{
+        top: 82%;
+        right: 5%;
+    }
     .about__description{
         width: 750px;
     }
@@ -154,6 +170,22 @@
     .hero__background-second img{
         width: 828px;
         right: 0;
+    }
+    .hero__exit-name {
+        top: 59%;
+        right: 5%;
+    }
+    .hero__ok-name{
+        top: 59%;
+        right: 5%;
+    }
+    .hero__exit-number {
+        top: 80%;
+        right: 5%;
+    }
+    .hero__ok-number{
+        top: 80%;
+        right: 5%;
     }
     .about__title{
         font-size: 43px;
@@ -505,10 +537,42 @@
         font-size: 20px;
     }
 }
-/*Ipad Air*/
+/*Ipad Pro landscape mode*/
+@media (max-width: 1194px) {
+    .container{
+        max-width: 1094px;
+    }
+    .hero .container {
+        max-width: 1094px;
+    }
+    .hero {
+        height: 748px;
+        padding: 131px 0 73px;
+    }
+    .hero__form {
+        padding-top: 51px;
+    }
+    .hero__background-second img {
+        width: 615px;
+        right: 0;
+    }
+}
+/*Ipad Air landscape mode*/
 @media (max-width: 1181px) {
     .container {
         max-width: 993px;
+    }
+    .header__link {
+        margin-right: 57px;
+    }
+    .hero{
+        height: 821px;
+    }
+    .hero__background-second img{
+        width: 669px;
+    }
+    .hero__background-first img {
+        width: 378px;
     }
     .modal__window {
         width: 875px;
@@ -713,6 +777,26 @@
     }
     .hero__input{
         font-size: 18px;
+    }
+    .hero__ok-name {
+        top: 59%;
+        right: 13%;
+    }
+    .hero__exit-name{
+        top: 59%;
+        right: 13%;
+    }
+    .hero__ok-number {
+        top: 80%;
+        right: 13%;
+    }
+    .hero__exit-number{
+        top: 80%;
+        right: 13%;
+    }
+    .hero__sky-button{
+        width: 286px;
+        height: 61px;
     }
     .about__description {
         width: 541px;
@@ -1003,6 +1087,61 @@
         left: 96px;
     }
 }
+/*Ipad mini landscape mode*/
+@media (max-width: 1025px) {
+    .container{
+        max-width: 944px;
+    }
+    .hero__background-first img {
+        width: 338px;
+    }
+    .hero{
+        height: 685px;
+    }
+    .hero .container {
+        max-width: 944px;
+    }
+    .hero__background-second img {
+        width: 526px;
+        right: 0;
+    }
+    .about__description {
+        width: 490px;
+        font-size: 19px;
+        line-height: 28px;
+    }
+    .about__background-img img {
+        width: 513px;
+    }
+    .mission__background-img img {
+        width: 520px;
+    }
+    .mission__description {
+        width: 487px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .property .property__perfection-description {
+        width: 430px;
+    }
+    .property__text-sub {
+        width: 410px;
+    }
+    .services__automation-description {
+        width: 410px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .jobs__background-img img {
+        width: 538px;
+    }
+    .address__toster-inst{
+        margin: 0;
+    }
+    .address__tele-whats{
+        margin: 0;
+    }
+}
 @media (max-width: 971px) {
     .container{
         max-width: 846px;
@@ -1070,6 +1209,31 @@
     }
     .hero__background-second img {
         width: 474px;
+    }
+    .hero .hero__form img{
+        width: 13px;
+        height: 13px;
+    }
+    .hero__exit-name {
+        top: 61%;
+        right: 12%;
+    }
+    .hero__ok-name{
+        top: 61%;
+        right: 12%;
+    }
+    .hero__exit-number {
+        top: 81%;
+        right: 12%;
+    }
+    .hero__ok-number{
+        top: 81%;
+        right: 12%;
+    }
+    .hero__sky-button {
+        width: 264px;
+        height: 49px;
+        font-size: 22px;
     }
     .about__background-img img {
         width: 471px;
@@ -1350,7 +1514,7 @@
         display: block;
     }
     .hero {
-        height:100vh;
+        height: 985px;
         padding: 109px 0 40px;
     }
     .hero__background-first img {
@@ -1398,6 +1562,22 @@
     .hero__vector {
         top: 480px;
         left: 199px;
+    }
+    .hero__ok-number {
+        top: 91%;
+        right: 6%;
+    }
+    .hero__exit-number{
+        top: 91%;
+        right: 6%;
+    }
+    .hero__ok-name {
+        top: 81%;
+        right: 6%;
+    }
+    .hero__ok-name{
+        top: 81%;
+        right: 6%;
     }
     .about__under{
         display: block;
@@ -1723,6 +1903,9 @@
     .container {
         max-width: 692px;
     }
+    .hero{
+        height: 1020px;
+    }
     .hero .container {
         max-width: 747px;
     }
@@ -1730,7 +1913,7 @@
         padding-top: 351px;
     }
     .hero__background-second img {
-        width: 553px;
+        width: 481px;
     }
     .hero__background-second{
         top: 50%;
@@ -1742,6 +1925,22 @@
     .hero__vector {
         top: 403px;
         left: 203px;
+    }
+    .hero__ok-name {
+        top: 74.5%;
+        right: 6%;
+    }
+    .hero__exit-name{
+        top: 74.5%;
+        right: 6%;
+    }
+    .hero__ok-number {
+        top: 85%;
+        right: 6%;
+    }
+    .hero__exit-number{
+        top: 85%;
+        right: 6%;
     }
     .about__background-img{
         top: 106%;
@@ -1793,6 +1992,7 @@
         top: 15px;
     }
     .hero {
+        height: 108vh;
         padding: 85px 0 34px;
     }
     .hero__main-title {
@@ -1841,6 +2041,22 @@
     }
     .hero__input::placeholder{
         font-size: 15px;
+    }
+    .hero__ok-name {
+        top: 67%;
+        right: 6%;
+    }
+    .hero__exit-name{
+        top: 67%;
+        right: 6%;
+    }
+    .hero__ok-number {
+        top: 84%;
+        right: 6%;
+    }
+    .hero__exit-number{
+        top: 84%;
+        right: 6%;
     }
     .about {
         padding: 8px 0 36px;
@@ -1969,6 +2185,9 @@
     }
     .jobs__sky-button-mobile{
         display: block;
+    }
+    .jobs .sky-button{
+        margin-left: 8%;
     }
     .address {
         position: relative;
@@ -2116,7 +2335,7 @@
         height: 28px;
     }
     .hero {
-        height: 100vh;
+        height: 600px;
         padding: 109px 0 40px;
     }
     .hero__background-first {
@@ -2141,7 +2360,7 @@
         font-weight: normal;
     }
     .hero__form {
-        padding-top: 194px;
+        padding-top: 182px;
     }
     .hero__background-second img{
         width: 225px;
@@ -2195,6 +2414,27 @@
     .hero .sky-button{
         width: 250px;
         height: 50px;
+    }
+    .hero__ok-name {
+        top: 69%;
+        right: 6%;
+    }
+    .hero__exit-name{
+        top: 69%;
+        right: 6%;
+    }
+    .hero__ok-number {
+        top: 84.4%;
+        right: 6%;
+    }
+    .hero__exit-number{
+        top: 84.4%;
+        right: 6%;
+    }
+    .hero__sky-button {
+        width: 214px;
+        height: 33px;
+        font-size: 19px;
     }
     .about{
         padding: 21px 0 16px;
@@ -2445,8 +2685,8 @@
         line-height: 18px;
     }
     .jobs .sky-button{
-        width: 250px;
-        margin-left: 15px;
+        width: 274px;
+        margin-left: 7%;
         height: 50px;
     }
     .jobs__dropdown-content {
@@ -2528,10 +2768,21 @@
 }
 /*Samsung Galaxy S20 Ultra*/
 @media (max-width: 413px) {
+    .hero{
+        height: 600px;
+    }
     .hero__background-second {
         transform: translate(-50%, -50%);
         top: 45%;
         left: 46%;
+    }
+    .hero__ok-name {
+        top: 68%;
+        right: 6%;
+    }
+    .hero__exit-name{
+        top: 68%;
+        right: 6%;
     }
     .jobs__auto-text-value {
         font-size: 14px;
@@ -2566,13 +2817,16 @@
         max-width: 350px;
     }
     .hero {
-        height: 100vh;
+        height: 673px;
         padding: 100px 0 40px;
     }
     .hero__background-second {
         transform: translate(-50%, -50%);
         top: 46%;
         left: 46%;
+    }
+    .hero__background-second{
+        top: 50%;
     }
     .about__description_none{
         width: 313px;
@@ -2608,7 +2862,9 @@
     .container {
         max-width: 310px;
     }
-
+    .hero{
+        height: 600px;
+    }
     .hero__input {
         width: 315px;
     }
@@ -2754,6 +3010,9 @@
     .container{
         max-width: 280px;
     }
+    .hero{
+        height: 583px;
+    }
     .header svg {
         width: 25px;
         height: 25px;
@@ -2761,18 +3020,41 @@
     .hero__main-title{
         font-size: 13px;
     }
+    .hero__vector_blue{
+       top: 169px;
+    }
     .hero__sub-title{
         font-size: 9px;
     }
     .hero__background-second {
-        top: 49%;
+        top: 55%;
         left: 42%;
+    }
+    .hero__background-second img {
+        width: 220px;
+        height: 116px;
     }
     .hero__input {
         width: 257px;
     }
     .hero__form {
         padding-top: 140px;
+    }
+    .hero__exit-name {
+        top: 64%;
+        right: 6%;
+    }
+    .hero__ok-name{
+        top: 64%;
+        right: 6%;
+    }
+    .hero__exit-number {
+        top: 82.4%;
+        right: 6%;
+    }
+    .hero__ok-number{
+        top: 82.4%;
+        right: 6%;
     }
     .about__title {
         font-size: 20px;
@@ -2879,7 +3161,7 @@
     }
     .jobs .sky-button {
         width: 204px;
-        margin-left: 15px;
+        margin-left: 22px;
         height: 38px;
         font-size: 14px;
     }
